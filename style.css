@@ -1,0 +1,86 @@
+body{
+margin:0;
+padding:30px;
+font-family:Arial;
+background:linear-gradient(135deg,#ff9ad5,#8a52ff,#59c8ff);
+min-height:100vh;
+text-align:center;
+}
+
+.box{
+width:900px;
+max-width:95%;
+margin:auto;
+background:white;
+padding:25px;
+border-radius:25px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+animation:fadeIn 1s ease;
+}
+
+h1{
+font-size:50px;
+color:#7b2cff;
+}
+
+#chatbox{
+height:420px;
+background:#f4f4f4;
+border-radius:20px;
+padding:15px;
+overflow-y:auto;
+text-align:left;
+margin-bottom:20px;
+}
+
+#chatbox p{
+padding:12px;
+border-radius:15px;
+margin:10px 0;
+animation:slideUp 0.5s ease;
+}
+
+.user{
+background:#d8ecff;
+margin-left:auto;
+width:fit-content;
+max-width:80%;
+}
+
+.bot{
+background:#ffdff1;
+width:fit-content;
+max-width:80%;
+}
+
+span{
+display:block;
+font-size:12px;
+margin-top:5px;
+color:gray;
+}
+
+button{
+padding:15px 30px;
+font-size:22px;
+margin:5px;
+border:none;
+border-radius:15px;
+cursor:pointer;
+background:#7b2cff;
+color:white;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+@keyframes slideUp{
+from{transform:translateY(20px);opacity:0;}
+to{transform:translateY(0);opacity:1;}
+}
+
+@keyframes fadeIn{
+from{opacity:0;}
+to{opacity:1;}
+}
